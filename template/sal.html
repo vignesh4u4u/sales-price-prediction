@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sales</title>
+</head>
+<body style="background-color:silver">
+<h1 style="background-color:yellow;font-size=10px;font-align:center">sales prediction</h1>
+<form action="/pre" method="POST">
+    <label for="TV">TV</label>
+    <input type="text" name="TV" id="TV">
+    <label for="Radio">Radio</label>
+    <input type="text" name="Radio" id="Radio">
+    <label for="Newspaper">Newspaper</label>
+    <input type="text" name="Newspaper" id="Newspaper"><br>
+    <div><br>
+        <input type="submit" name="predict"><br><br>
+
+        price :<b>{{result}}</b>
+
+    </div>
+</form>
+
+</body>
+</html>
